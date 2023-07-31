@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import Header from "./Header";
 import './index.scss'
 
@@ -14,6 +15,7 @@ function Layout({ ...props}: IUniformLayout) {
         </div>
         <div className="landing-main-content-main">
           {props.content}
+          <Footer/>
         </div>
       </div>
       </div>
