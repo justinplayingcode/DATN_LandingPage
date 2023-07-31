@@ -15,6 +15,18 @@ const App: React.FunctionComponent = () => {
       path: "/about",
       element: <About/>
     },
+    {
+      path: "/service",
+      element: <>dịch vụ</>
+    },
+    {
+      path: "/news",
+      element: <>news</>
+    },
+    {
+      path: "/contact",
+      element: <>liên hệ</>
+    },
   ]
 
   return (
