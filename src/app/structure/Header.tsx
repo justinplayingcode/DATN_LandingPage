@@ -5,7 +5,14 @@ interface INavigateItem {
   index: number;
   key: string;
   title: string;
-  isActive: boolean
+  isActive: boolean;
+}
+
+const getSectionUrl = () => {
+  const defaultUrl = 'http://localhost:5173'
+  const lng = defaultUrl.length;
+  const currentUrl = window.location.href;
+  return currentUrl.substring(lng)
 }
 
 const initNavigateItems: INavigateItem[] = [
@@ -13,35 +20,37 @@ const initNavigateItems: INavigateItem[] = [
     index: 0,
     key: "/",
     title: "Trang chủ",
-    isActive: true
+    isActive: getSectionUrl() === "/",
   },
   {
     index: 1,
     key: "/about",
     title: "Về chúng tôi",
-    isActive: false
+    isActive: getSectionUrl() === "/about",
   },
   {
     index: 2,
     key: "/service",
     title: "Dịch vụ",
-    isActive: false
+    isActive: getSectionUrl() === "/service",
   },
   {
     index: 3,
     key: "/news",
     title: "Tin tức",
-    isActive: false
+    isActive: getSectionUrl() === "/news",
   },
   {
     index: 4,
     key: "/contact",
     title: "Liên hệ",
-    isActive: false
+    isActive: getSectionUrl() === "/contact"
   },
+
 ]
 function Header() {
   const navigate = useNavigate();
+
   const [navigateItems, setNavigateItems] = useState<INavigateItem[]>(initNavigateItems);
 
   const handleClick = (key: string, _index: number) => {
