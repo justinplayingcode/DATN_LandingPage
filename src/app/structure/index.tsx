@@ -14,6 +14,9 @@ function Layout({ ...props}: IUniformLayout) {
           <Header/>
         </div>
         <div className="landing-main-content-main">
+          {/* <div className="landing-main-content-main-">
+
+          </div> */}
           {props.content}
           <Footer/>
         </div>
