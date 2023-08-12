@@ -1,6 +1,6 @@
 import './index.scss';
 import "../../css/bootstrap.min.css"
-import { FaMapMarkedAlt } from "react-icons/fa";
+import { FaLocationArrow, FaPhone, FaEnvelopeOpen } from "react-icons/fa";
 
 function Contact() {
     return (
@@ -16,13 +16,9 @@ function Contact() {
                         <div className="col-lg-4">
                             <div className="bg-light rounded d-flex flex-column align-items-center justify-content-center text-center" style={{ height: 200 }}>
                                 <div className="d-flex align-items-center justify-content-center bg-primary rounded-circle mb-4" style={{ width: 100, height: 70, transform: "rotate(-15deg)" }}>
-                                    {/* <FontAwesomeIcon icon="FaMapLocationDot" />
-                                     */}
-                                     <div className='fa-2x text-white' style={{ transform: "rotate(15deg)" }}>
-
-                                     <FaMapMarkedAlt/>
-                                     </div>
-                                    {/* <i className="fa fa-2x fa-location-arrow text-white" style={{ transform: "rotate(15deg)" }}></i> */}
+                                    <div className='text-white' style={{ fontSize: "2em", transform: "rotate(15deg)" }}>
+                                        <FaLocationArrow />
+                                    </div>
                                 </div>
                                 <h6 className="mb-0">1, Đại Cồ Việt, Hai Bà Trưng, Hà Nội</h6>
                             </div>
@@ -30,7 +26,9 @@ function Contact() {
                         <div className="col-lg-4">
                             <div className="bg-light rounded d-flex flex-column align-items-center justify-content-center text-center" style={{ height: 200 }}>
                                 <div className="d-flex align-items-center justify-content-center bg-primary rounded-circle mb-4" style={{ width: 100, height: 70, transform: "rotate(-15deg)" }}>
-                                    <i className="fa fa-2x fa-phone text-white" style={{ transform: "rotate(15deg);" }}></i>
+                                    <div className='text-white' style={{ fontSize: "2em", transform: "rotate(15deg)" }}>
+                                        <FaPhone />
+                                    </div>
                                 </div>
                                 <h6 className="mb-0">+84 912 345 678</h6>
                             </div>
@@ -38,7 +36,9 @@ function Contact() {
                         <div className="col-lg-4">
                             <div className="bg-light rounded d-flex flex-column align-items-center justify-content-center text-center" style={{ height: 200 }}>
                                 <div className="d-flex align-items-center justify-content-center bg-primary rounded-circle mb-4" style={{ width: 100, height: 70, transform: "rotate(-15deg)" }}>
-                                    <i className="fa fa-2x fa-envelope-open text-white" style={{ transform: "rotate(15deg);" }}></i>
+                                    <div className='text-white' style={{ fontSize: "2em", transform: "rotate(15deg)" }}>
+                                        <FaEnvelopeOpen />
+                                    </div>
                                 </div>
                                 <h6 className="mb-0">starlight@hospital.com</h6>
                             </div>
@@ -64,16 +64,16 @@ function Contact() {
                                 <form>
                                     <div className="row g-3">
                                         <div className="col-12 col-sm-6">
-                                            <input type="text" className="form-control bg-light border-0" placeholder="Your Name" style={{ height: 55 }} />
+                                            <input type="text" className="form-control bg-light border-0" placeholder="Họ và tên" style={{ height: 55 }} />
                                         </div>
                                         <div className="col-12 col-sm-6">
-                                            <input type="email" className="form-control bg-light border-0" placeholder="Your Email" style={{ height: 55 }} />
+                                            <input type="email" className="form-control bg-light border-0" placeholder="Email" style={{ height: 55 }} />
                                         </div>
                                         <div className="col-12">
-                                            <input type="text" className="form-control bg-light border-0" placeholder="Subject" style={{ height: 55 }} />
+                                            <input type="text" className="form-control bg-light border-0" placeholder="Tiêu đề" style={{ height: 55 }} />
                                         </div>
                                         <div className="col-12">
-                                            <textarea className="form-control bg-light border-0" rows={5} placeholder="Message"></textarea>
+                                            <textarea className="form-control bg-light border-0" rows={5} placeholder="Nội dung"></textarea>
                                         </div>
                                         <div className="col-12">
                                             <button className="btn btn-primary w-100 py-3" type="submit">Gửi tin nhắn</button>
