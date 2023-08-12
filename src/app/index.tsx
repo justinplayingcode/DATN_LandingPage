@@ -1,4 +1,4 @@
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
+import { Route, HashRouter as Router, Routes } from 'react-router-dom'
 import Layout from './structure';
 import "./index.scss";
 import Home from './page/Home';
@@ -33,7 +33,7 @@ const App: React.FunctionComponent = () => {
     <Router>
       <Routes>
           {routerStructure.map((page) => {
-            return <Route path={page.path} element={<Layout content={page.element}/>} />
+            return <Route path={`${page.path}`} element={<Layout content={page.element}/>} />
           })}
       </Routes>
     </Router>
