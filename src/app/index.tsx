@@ -1,4 +1,4 @@
-import { Route, HashRouter as Router, Routes } from 'react-router-dom'
+import { Route, HashRouter , Routes, Navigate } from 'react-router-dom'
 import Layout from './structure';
 import "./index.scss";
 import Home from './page/Home';
@@ -9,37 +9,17 @@ import Contact from './page/Contact';
 
 const App: React.FunctionComponent = () => {
 
-  const routerStructure = [
-    {
-      path: "/",
-      element: <Home/>
-    },
-    {
-      path: "/about",
-      element: <About/>
-    },
-    {
-      path: "/service",
-      element: <Services/>
-    },
-    {
-      path: "/news",
-      element: <News/>
-    },
-    {
-      path: "/contact",
-      element: <Contact/>
-    },
-  ]
-
   return (
-    <Router>
+    <HashRouter basename="/">
       <Routes>
-          {routerStructure.map((page) => {
-            return <Route path={`${page.path}`} element={<Layout content={page.element}/>} />
-          })}
+        <Route path="/" element={<Navigate to="/home" replace />} />
+        <Route path="home" element={<Layout content={<Home/>}/>} />
+        <Route path="/about" element={<Layout content={<About/>}/>} />
+        <Route path="/service" element={<Layout content={<Services/>}/>} />
+        <Route path="/news" element={<Layout content={<News/>}/>} />
+        <Route path="/contact" element={<Layout content={<Contact/>}/>} />
       </Routes>
-    </Router>
+    </HashRouter>
   )
 }
 

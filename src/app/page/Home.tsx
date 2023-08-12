@@ -2,6 +2,7 @@ import './index.scss'
 import AboutImg from "../../asset/img/about.jpg"
 
 function Home() {
+
   return (
     <>
       {/* <!-- Hero Start --> */}
