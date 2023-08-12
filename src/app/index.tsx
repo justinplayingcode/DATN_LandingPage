@@ -3,6 +3,9 @@ import Layout from './structure';
 import "./index.scss";
 import Home from './page/Home';
 import About from './page/About';
+import Services from './page/Service';
+import News from './page/News';
+import Contact from './page/Contact';
 
 const App: React.FunctionComponent = () => {
 
@@ -17,15 +20,15 @@ const App: React.FunctionComponent = () => {
     },
     {
       path: "/service",
-      element: <>dịch vụ</>
+      element: <Services/>
     },
     {
       path: "/news",
-      element: <>news</>
+      element: <News/>
     },
     {
       path: "/contact",
-      element: <>liên hệ</>
+      element: <Contact/>
     },
   ]
 
