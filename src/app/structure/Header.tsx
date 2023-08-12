@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import logo from "../../asset/img/logo-removebg-preview.png"
 
 interface INavigateItem {
   index: number;
@@ -68,7 +69,10 @@ function Header() {
   return (  
     <div id="main-header">
       <div className="header-wrapper">
-        <div className="icon-header"></div>
+        <div className="icon-header d-flex align-items-center justify-content-center">
+          <img className="rounded" src={logo} style={{height: 180, objectFit: "cover" }} />
+
+        </div>
         <div className="navigate-header">
           {
             navigateItems.map((item, index) => (

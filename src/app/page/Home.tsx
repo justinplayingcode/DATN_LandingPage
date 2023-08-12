@@ -1,5 +1,4 @@
 import './index.scss'
-import AboutImg from "../../asset/img/phau_thuat-18_06_58_183.jpg"
 import { FaAmbulance, FaMicroscope, FaPills, FaProcedures, FaStethoscope, FaUserMd } from "react-icons/fa";
 
 function Home() {
@@ -27,7 +26,7 @@ function Home() {
           <div className="row gx-5">
             <div className="col-lg-5 mb-5 mb-lg-0" style={{ minHeight: 500 }}>
               <div className="position-relative h-100">
-                <img className="position-absolute w-100 h-100 rounded" src={AboutImg} style={{ objectFit: "cover" }} />
+                <img className="position-absolute w-100 h-100 rounded" src="https://res.cloudinary.com/dipiauw0v/image/upload/v1691845344/DATN/phau_thuat-18_06_58_183_ibgsoe.jpg" style={{ objectFit: "cover" }} />
               </div>
             </div>
             <div className="col-lg-7">
