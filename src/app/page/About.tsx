@@ -1,5 +1,5 @@
 import './index.scss';
-import AboutImg from "../../asset/img/about.jpg"
+import AboutImg from "https://res.cloudinary.com/dipiauw0v/image/upload/v1691845344/DATN/phau_thuat-18_06_58_183_ibgsoe.jpg"
 
 function About() {
   return (  
@@ -16,32 +16,32 @@ function About() {
             <div className="col-lg-7">
               <div className="mb-4">
                 <h5 className="d-inline-block text-primary text-uppercase border-bottom border-5">Về chúng tôi</h5>
-                <h1 className="display-4">Best Medical Care For Yourself and Your Family</h1>
+                <h1 className="display-4">Dịch vụ y tế tốt nhất cho bạn và gia đình</h1>
               </div>
-              <p>Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos sadipscing labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor consetetur takimata eirmod, dolores takimata consetetur invidunt magna dolores aliquyam dolores dolore. Amet erat amet et magna</p>
+              <p>Bệnh viện Starlight là một trong 7 bệnh viện thuộc phân nhóm Bệnh viên Hạng I trên địa bàn Hà Nội. Đơn vị cung cấp dịch vụ thăm khám, điều trị nội ngoại trú cho tất các các chuyên khoa. Trong những năm gần đây, cơ sở chú trọng cải tạo và đưa vào sử dụng các tòa nhà khang trang, được trang bị cơ sở vật chất hiện đại, đáp ứng nhu cầu chăm sóc sức khỏe của bệnh nhân nội, ngoại thành và trên cả nước.</p>
               <div className="row g-3 pt-3">
                 <div className="col-sm-3 col-6">
                   <div className="bg-light text-center rounded-circle py-4">
                     <i className="fa fa-3x fa-user-md text-primary mb-3"></i>
-                    <h6 className="mb-0">Qualified<small className="d-block text-primary">Doctors</small></h6>
+                    <h6 className="mb-0">Bác sĩ<small className="d-block text-primary">Chất lượng</small></h6>
                   </div>
                 </div>
                 <div className="col-sm-3 col-6">
                   <div className="bg-light text-center rounded-circle py-4">
                     <i className="fa fa-3x fa-procedures text-primary mb-3"></i>
-                    <h6 className="mb-0">Emergency<small className="d-block text-primary">Services</small></h6>
+                    <h6 className="mb-0">Dịch vụ<small className="d-block text-primary">Khẩn cấp</small></h6>
                   </div>
                 </div>
                 <div className="col-sm-3 col-6">
                   <div className="bg-light text-center rounded-circle py-4">
                     <i className="fa fa-3x fa-microscope text-primary mb-3"></i>
-                    <h6 className="mb-0">Accurate<small className="d-block text-primary">Testing</small></h6>
+                    <h6 className="mb-0">Xét nghiệm<small className="d-block text-primary">Chính xác</small></h6>
                   </div>
                 </div>
                 <div className="col-sm-3 col-6">
                   <div className="bg-light text-center rounded-circle py-4">
                     <i className="fa fa-3x fa-ambulance text-primary mb-3"></i>
-                    <h6 className="mb-0">Free<small className="d-block text-primary">Ambulance</small></h6>
+                    <h6 className="mb-0">Miễn phí<small className="d-block text-primary">Xe cứu thương</small></h6>
                   </div>
                 </div>
               </div>
