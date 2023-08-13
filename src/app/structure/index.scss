@@ -1,5 +1,5 @@
-$headerHeight: 90px;
-$footerHeight: 440px;
+$headerHeight: 110px;
+$footerHeight: 320px;
 $primary: #13C5DD;
 $secondary: #354F8E;
 $light: #EFF5F9;
@@ -29,9 +29,7 @@ $dark: #1D2A4D;
       position: relative;
       margin-top: $headerHeight;
       height: calc(100% - $headerHeight);
-      // max-height: calc(100% - $headerHeight);
       width: 100%;
-      // background-color: #bfa5a5;
       overflow-y: auto;
 
       .hero-header {
@@ -54,14 +52,58 @@ $dark: #1D2A4D;
 
 #main-header {
   display: flex;
+  flex-direction: column;
   height: $headerHeight;
   width: 100%;
-  justify-content: center;
-
-  .header-wrapper {
-    max-width: 1260px;
+  align-items: center;
+  .header-time {
+    height: 30px;
     width: 100%;
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #1D2A4D;
+    
+    .header-time-wrapper {
+      // background-color: #848E9F;
+      height: 100%;
+      max-width: 1340px;
+      width: 100%;
+      padding: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .header-time-wrapper-section {
+        font-size: 14px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+
+        p {
+          display: flex;
+          align-items: center;
+          margin: 0 0 0 8px;
+          padding-left: 4px;
+          border-left: 1px solid #fff;
+        }
+
+        a {
+          color: #fff;
+          padding: 4px 8px;
+          border-radius: 8px;
+          &:hover {
+            color: #13C5DD;
+            cursor: pointer;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  .header-wrapper {
+    max-width: 1340px;
+    width: 100%;
+    height: 80px;
     display: flex;
 
     .icon-header {
@@ -110,25 +152,31 @@ $dark: #1D2A4D;
   justify-content: center;
 
   .footer-wrapper {
-    padding: 100px 0;
+    padding: 44px 0;
     display: flex;
-    max-width: 1260px;
-    width: 1260px;
-    justify-content: space-around;
-
+    max-width: 1340px;
+    width: 100%;
+    justify-content: space-between;
 
     .footer-wrapper-section {
-      width: 25%;
+      width: 50%;
       min-width: 360px;
       padding-right: 52px;
 
-      .footer-wrapper-section-header {
-        color: #13C5DD;
-        font-size: 24px;
-        font-weight: 600;
-        display: inline-block;
-        padding-bottom: 4px;
-        border-bottom: 4px solid #354F8E;
+      .footer-wrapper-section-header-wraper {
+        width: 100%;
+        display: flex;
+        .footer-wrapper-section-header {
+          color: #13C5DD;
+          font-size: 24px;
+          font-weight: 600;
+          display: inline-block;
+          padding-bottom: 4px;
+          border-bottom: 4px solid #354F8E;
+        }
+      }
+      .footer-wrapper-section-header-wraper.buttonsection {
+        justify-content: end;
       }
 
       .footer-wrapper-section-content {
@@ -153,6 +201,7 @@ $dark: #1D2A4D;
 
       .footer-wrapper-section-newsletter {
         margin-top: 24px;
+        text-align: end;
 
         .footer-wrapper-section-newsletter-input {
           display: flex;
@@ -180,9 +229,11 @@ $dark: #1D2A4D;
             display: flex;
             align-items: center;
             justify-content: center;
-
-            &:hover {
-              color: #333;
+            a {
+              color: #fff;
+              &:hover {
+                color: #333;
+              }
             }
           }
         }
@@ -190,14 +241,13 @@ $dark: #1D2A4D;
         .footer-wrapper-section-newsletter-title {
           color: #13C5DD;
           font-weight: bold;
-
         }
 
         .footer-wrapper-section-newsletter-icons {
           width: 100%;
           height: 52px;
           display: flex;
-          justify-content: start;
+          justify-content: end;
 
           .footer-wrapper-section-newsletter-icon {
             background-color: #13C5DD;
@@ -208,6 +258,10 @@ $dark: #1D2A4D;
             width: 44px;
             height: 44px;
             margin: 16px 8px 0 0;
+
+            &:last-child {
+              margin-right: 0;
+            }
 
             .MuiSvgIcon-root {
               color: #fff;
@@ -220,6 +274,21 @@ $dark: #1D2A4D;
             }
           }
         }
+      }
+      .footer-wrapper-section-newsletter.buttonsection {
+        display: flex;
+        justify-content: flex-end;
+
+        .footer-wrapper-section-newsletter-input {
+          &:nth-child(2) {
+            margin-left: 8%;
+            .footer-wrapper-section-newsletter-input-btn {
+              border-radius: 8px;
+            }
+          }
+
+        }
+
       }
     }
   }

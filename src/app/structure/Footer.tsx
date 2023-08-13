@@ -9,7 +9,11 @@ function Footer() {
   const getInTouch = () => {
     return (
       <>
-        <div className="footer-wrapper-section-header">Liên hệ với chúng tôi</div>
+        <div className="footer-wrapper-section-header-wraper">
+          <div className="footer-wrapper-section-header buttonsection">
+          Liên hệ với chúng tôi
+          </div>
+        </div>
         <div className="footer-wrapper-section-content">
           <div className="footer-wrapper-section-list-items">
             <div className="footer-wrapper-section-list-item">
@@ -33,11 +37,22 @@ function Footer() {
   const newsLetter = () => {
     return (
       <>
-        <div className="footer-wrapper-section-header">Đăng ký để nhận thông tin</div>
-        <div className="footer-wrapper-section-newsletter">
+        <div className="footer-wrapper-section-header-wraper buttonsection">
+          <div className="footer-wrapper-section-header">
+            Đăng ký để sử dụng dịch vụ của chúng tôi
+          </div>
+        </div>
+        <div className="footer-wrapper-section-newsletter buttonsection">
           <div className="footer-wrapper-section-newsletter-input">
             <input placeholder="Email của bạn..."/>
-            <div className="footer-wrapper-section-newsletter-input-btn">Đăng ký</div>
+            <div className="footer-wrapper-section-newsletter-input-btn">
+              <a href="https://msstarlight.netlify.app/" target="_blank">Đăng ký</a>
+            </div>
+          </div>
+          <div className="footer-wrapper-section-newsletter-input">
+            <div className="footer-wrapper-section-newsletter-input-btn">
+              <a href="https://msstarlight.netlify.app/" target="_blank">Đặt lịch khám</a>
+            </div>
           </div>
         </div>
         <div className="footer-wrapper-section-newsletter">
