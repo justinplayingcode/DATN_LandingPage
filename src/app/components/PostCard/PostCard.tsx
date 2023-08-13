@@ -12,7 +12,7 @@ interface PostCardProps {
 export default function PostCard(props: PostCardProps) {
 
     return (
-        <Card sx={{minWidth: "400px", maxWidth: "30%", display: 'flex', flexDirection: 'column', marginBottom: "68px" }}>
+        <Card sx={{minWidth: "400px", maxWidth: "45%", display: 'flex', flexDirection: 'column', marginBottom: "68px" }}>
             <Box  sx={{ display: 'flex', flexDirection: 'row', alignItems: "center" }}>
                 <CardMedia
                     component="img"
