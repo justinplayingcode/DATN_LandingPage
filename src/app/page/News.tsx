@@ -1,4 +1,5 @@
 import PostCard from '../components/PostCard/PostCard';
+import { newsPosts } from '../mockdata';
 import './index.scss';
 
 function News() {
@@ -70,7 +71,7 @@ function News() {
         {
             id: "9",
             image: "https://static.tuoitre.vn/tto/i/s626/2016/09/22/hinh-7-1474537411.jpg",
-            title: "​Đồ ăn nhanh - thủ phạm gây bệnh về đường hô hấp",
+            title: "Đồ ăn nhanh - thủ phạm gây bệnh về đường hô hấp",
             subtitle: "Đồ ăn nhanh - món khoái khẩu của trẻ em nhiều nước trên thế giới có thể là thủ phạm gây ra các bệnh hen suyễn, viêm da hay viêm mũi- màng kết. Đây là kết luận trong công trình nghiên cứu của các nhà khoa học New Zealand, được công bố trên tạp chí Thorax.", 
             author: "Đoàn Minh Giang", 
             date: "14/08/2023",
@@ -92,7 +93,7 @@ function News() {
                     style={{ flexFlow: "wrap", gap: "5%" }}
                 >
                     {
-                        item.map((item) => (
+                        newsPosts.map((item) => (
                             <PostCard
                                 id={item.id}
                                 image={item.image}
