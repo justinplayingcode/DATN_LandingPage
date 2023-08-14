@@ -7,6 +7,7 @@ import Services from './page/Service';
 import News from './page/News';
 import Contact from './page/Contact';
 import ScrollToTop from './structure/ScrollWrapper';
+import Details from './page/Details';
 
 const App: React.FunctionComponent = () => {
 
@@ -19,6 +20,7 @@ const App: React.FunctionComponent = () => {
           <Route path="/about" element={<Layout content={<About/>}/>} />
           <Route path="/service" element={<Layout content={<Services/>}/>} />
           <Route path="/news" element={<Layout content={<News/>}/>} />
+          <Route path="/news/:id" element={<Layout content={<Details/>}/>} />
           <Route path="/contact" element={<Layout content={<Contact/>}/>} />
         </Routes>
       </ScrollToTop>
