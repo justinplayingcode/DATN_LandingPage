@@ -31,7 +31,7 @@ export default function PostCard(props: PostCardProps) {
             </Box>
             <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: "space-between", marginBottom: "20px"}}>
                     <Typography variant="body2" color="text.secondary" sx={{maxWidth: "calc(100% - 150px"}}>
-                        Tác giả: {props.author}
+                        {props.author}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
                         Đăng ngày: {props.date}
