@@ -1,6 +1,3 @@
 ### DATN_LandingPage
-## justin
-## joe
-
-# material
-https://mui.com/material-ui/getting-started/installation/
+#### Phạm Duy Thắng _ 20193107
+#### Nguyễn Trọng Dự _ 20192763

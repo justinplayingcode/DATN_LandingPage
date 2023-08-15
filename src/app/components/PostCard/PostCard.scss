@@ -1,0 +1,58 @@
+@media screen and (max-width: 390px) {
+    .MuiCard-root{
+        max-width: 100%;
+        min-width: 100% !important;
+        padding: 0 !important;
+        .MuiBox-root{
+            &:first-child{
+                width: 100%;
+                flex-direction: column;
+                .MuiCardContent-root{
+                    p{
+                        width: 100%;
+                    }
+                }
+            }
+            &:nth-child(2){
+                width: 100%;
+                flex-direction: column;
+                padding: 16px;
+                .MuiCardContent-root{
+                    p{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .MuiCard-root{
+        max-width: 100%;
+        min-width: 100% !important;
+        padding: 0 !important;
+        .MuiBox-root{
+            &:first-child{
+                width: 100%;
+                img {
+                    width: 300px;
+                }
+                .MuiCardContent-root{
+                    p{
+                        width: 100%;
+                    }
+                }
+            }
+            &:nth-child(2){
+                width: 100%;
+                padding: 16px;
+                .MuiCardContent-root{
+                    p{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
