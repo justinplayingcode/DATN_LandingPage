@@ -3,7 +3,7 @@ import "./PostCard.scss"
 import { useNavigate } from "react-router-dom";
 
 interface PostCardProps {
-    id?:string;
+    id:string;
     image: string;
     title: string;
     subtitle: string;
