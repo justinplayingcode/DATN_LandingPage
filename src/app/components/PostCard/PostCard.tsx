@@ -1,7 +1,9 @@
 import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
 import "./PostCard.scss"
+import { useNavigate } from "react-router-dom";
 
 interface PostCardProps {
+    id?:string;
     image: string;
     title: string;
     subtitle: string;
@@ -10,10 +12,11 @@ interface PostCardProps {
 }
 
 export default function PostCard(props: PostCardProps) {
+    const navigate = useNavigate();
 
     return (
-        <Card sx={{minWidth: "400px", maxWidth: "45%", display: 'flex', flexDirection: 'column', marginBottom: "68px" }}>
-            <Box  sx={{ display: 'flex', flexDirection: 'row', alignItems: "center" }}>
+        <Card sx={{minWidth: "400px", maxWidth: "45%", display: 'flex', flexDirection: 'column', marginBottom: "68px", justifyContent: "space-between"}}>
+            <Box  sx={{ display: 'flex', flexDirection: 'row', alignItems: "center" }} onClick={() => navigate(`/news/${props.id}`)}>
                 <CardMedia
                     component="img"
                     sx={{ width: 150, height: 150 }}
